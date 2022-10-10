@@ -1,0 +1,20 @@
+.single-topic{
+    padding: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.single-topic img{
+    width: 100%;
+    background-color: rgb(229, 229, 238);
+    border-radius: 10px;
+
+}
+.start-btn{
+    background-color: rgb(59, 56, 247);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
