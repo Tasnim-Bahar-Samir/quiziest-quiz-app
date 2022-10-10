@@ -1,0 +1,23 @@
+.single-quiz{
+    border: 1px solid gainsboro;
+    padding: 10px;
+    min-height: 200px;
+}
+.single-quiz h4{
+    margin-bottom: 30px;
+}
+.options{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+  
+}
+.option{
+    border: 1px solid gainsboro;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}

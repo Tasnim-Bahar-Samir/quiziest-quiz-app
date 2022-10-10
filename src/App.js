@@ -1,7 +1,7 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import NavBar from './Components/NavBar/NavBar';
+import Quizes from './Components/Quizes/Quizes';
 import Topics from './Components/Topics/Topics';
 import Main from './Layout/Main';
 
@@ -15,6 +15,11 @@ function App() {
           path:'/',
           loader:()=>fetch('https://openapi.programming-hero.com/api/quiz'),
           element:<Topics/>
+        },
+        {
+          path: '/topic/:quizId',
+          loader:({params})=>fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`),
+          element:<Quizes/>
         }
       ]
     }
