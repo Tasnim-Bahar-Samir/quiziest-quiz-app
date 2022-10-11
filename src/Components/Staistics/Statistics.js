@@ -6,7 +6,6 @@ import './Statistics.css'
 
 const Statistics = () => {
     const data = useLoaderData().data;
-    console.log(data)
     const chartStyle= {
         padding:'10px',
         textAlign:'center'
