@@ -1,5 +1,6 @@
 Project Name: Quiziest.
-live link:
+live link: https://quiziest-quiz-app.netlify.app/blog
+code link: https://github.com/programming-hero-web-course2/b6-quiz-crackerz-Tasnim-Bahar-Samir
 
 About project:
 *Quiziest is online platform to perticipate quiz.
