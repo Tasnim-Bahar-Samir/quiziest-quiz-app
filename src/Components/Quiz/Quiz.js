@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import './Quiz.css';
 import Options from '../Options/Options';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import{AiFillEye,AiFillEyeInvisible} from 'react-icons/ai';
 
 
 const Quiz = ({quiz,index}) => {
-  const [open,setOpen] = useState(false)
-  console.log(quiz)
-  const notify = (data) =>{
+  const [open,setOpen] = useState(false);
+
+  const notify = (data) =>{   
     if(data === quiz.correctAnswer){
-     return toast('Write Answer')
-    }else{
-        return toast("Wrong Answer")
-    }
+      return toast.success('Write Answer')
+     }else{
+         return toast.error("Wrong Answer")
+     }
 } 
 const handleAns = ()=>{
   setOpen(!open);
@@ -36,9 +36,9 @@ const handleAns = ()=>{
           <p>Ans: {quiz.correctAnswer}</p>
         </div>
         </div>
-        <ToastContainer/>
-       
+        
     </div>
+  
   )
 }
 

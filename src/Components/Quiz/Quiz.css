@@ -7,6 +7,7 @@
 }
 .single-quiz h4{
     margin-bottom: 30px;
+    padding-right: 20px;
 }
 
 .options{
@@ -32,7 +33,7 @@
     right: 10px;
     top: 10px;
     cursor: pointer;
-    padding: 5px;
+    padding-left: 10px;
     font-size: 25px;
 }
 .show-ans{

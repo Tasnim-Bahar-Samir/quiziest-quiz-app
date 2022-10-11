@@ -6,9 +6,15 @@
     justify-content: space-between;
     padding: 10px 80px;
 }
+.active{
+    background-color: white;
+    color: rgb(74, 74, 243) !important;
+}
 .logo{
     display: flex;
     align-items: center;
+    color: white;
+    text-decoration: none;
 }
 
 .logo img{
@@ -20,10 +26,16 @@
     color: white; 
     font-size: 18px;
     font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 8px;
 }
 
 @media  screen and (max-width:662px) {
     .nav-container{
-        padding: 10px 20px;
+        padding: 10px 10px;
+    }
+    .nav-link a{
+        margin-left: 5px;
+        padding: 3px 5px;
     }
 }
