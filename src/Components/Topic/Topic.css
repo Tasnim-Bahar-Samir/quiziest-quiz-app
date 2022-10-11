@@ -18,3 +18,12 @@
     margin-top: 10px;
     cursor: pointer;
 }
+
+@media  screen and (max-width:662px){
+    .single-topic img{
+        height: 150px;
+    }
+    .single-topic{
+        margin-bottom: 10px;
+    }
+}

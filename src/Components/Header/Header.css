@@ -16,4 +16,11 @@
 }
 .header-details p{
     line-height: 30px;
+    font-size: 18px;
+}
+@media screen and (max-width:662px) {
+    .header-container{
+        flex-direction: column;
+        margin: 20px;
+    }
 }

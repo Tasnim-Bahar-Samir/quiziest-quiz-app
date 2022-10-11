@@ -9,7 +9,7 @@ const Header = () => {
             <img src={headerImg} alt="" />
         </div>
         <div className="header-details">
-            <h3>Welcome to Quiziest!</h3>
+            <h2>Welcome to Quiziest!</h2>
             <p>
                 Quiziest is a online platform. Here you can practice different web technology by answering some important quizes. 
             </p>
