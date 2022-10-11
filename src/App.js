@@ -4,12 +4,15 @@ import './App.css';
 import Quizes from './Components/Quizes/Quizes';
 import Topics from './Components/Topics/Topics';
 import Main from './Layout/Main';
+import Error from './Components/Error/Error';
+import Statistics from './Components/Staistics/Statistics';
 
 function App() {
   const router = createBrowserRouter([
     {
       path:'/',
       element:<Main/>,
+      errorElement:<Error/>,
       children:[
         {
           path:'/',
@@ -20,6 +23,11 @@ function App() {
           path: '/topic/:quizId',
           loader:({params})=>fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`),
           element:<Quizes/>
+        },
+        {
+          path:'/statistics',
+          loader:()=>fetch('https://openapi.programming-hero.com/api/quiz'),
+          element:<Statistics/>
         }
       ]
     }

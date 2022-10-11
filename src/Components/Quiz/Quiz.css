@@ -7,6 +7,7 @@
 .single-quiz h4{
     margin-bottom: 30px;
 }
+
 .options{
     display: grid;
     grid-template-columns: auto auto;
@@ -21,6 +22,9 @@
     display: flex;
     gap: 5px;
     align-items: center;
+}
+.option:hover{
+    background-color: gainsboro;
 }
 .eye-btn{
     position: absolute;
