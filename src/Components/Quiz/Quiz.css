@@ -2,6 +2,7 @@
     border: 1px solid gainsboro;
     padding: 10px;
     min-height: 200px;
+    position: relative;
 }
 .single-quiz h4{
     margin-bottom: 30px;
@@ -20,4 +21,23 @@
     display: flex;
     gap: 5px;
     align-items: center;
+}
+.eye-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.show-ans{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    border-radius: 5px;
+}
+.hidden{
+    display: none;
 }
