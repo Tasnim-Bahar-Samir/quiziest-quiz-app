@@ -23,4 +23,12 @@
         flex-direction: column;
         margin: 20px;
     }
+    .header img{
+        width: 230px;
+    }
+}
+@media screen and (max-width:350px){
+    .header img{
+        width: 200px;
+    }
 }

@@ -39,3 +39,19 @@
         padding: 3px 5px;
     }
 }
+@media  screen and (max-width:350px){
+    .logo img{
+        width: 20px;
+    }
+    .nav-container{
+        padding: 5px 5px;
+    }
+    .logo h2{
+        font-size: 18px;
+    }
+    .nav-link a{
+        font-size: 14px;
+        padding: 3px 3px;
+    }
+
+}
