@@ -29,7 +29,7 @@ const handleAns = ()=>{
             }
             <div className="options">
                 {
-                    quiz.options.map((option,index)=> <Options option={option} key={index} index={index} notify ={notify}/>)
+                    quiz.options.map((option,idx)=> <Options option={option} key={idx} index={index} notify ={notify} idx ={idx}/>)
                 }
             </div>
             <div className={`show-ans ${open ? null:'hidden'}`}>

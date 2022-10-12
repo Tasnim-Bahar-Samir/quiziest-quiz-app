@@ -1,20 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
-const Options = ({option,index,notify}) => {
+const Options = ({option,index,notify,idx}) => {
   const [active,setActive] = useState(false);
-   const notification = ()=>{
-    setActive(!active);
+   useEffect(
+    ()=>{
     if(active){
       notify(option);
+      setActive(false)
     }
-    
-   }
+   },[active])
   return (
-    <label onClick={notification} className='option'>
-    <input type="radio" name='radio' id={index}/>
-    <p>{option}</p>
-    </label>
+      <label onClick={()=>setActive(!active)} className='option'>
+      <input type="radio" name={index} id={index}/>
+      {option}
+      </label>
+    
   )
 }
 
