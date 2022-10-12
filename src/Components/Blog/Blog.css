@@ -1,5 +1,5 @@
 .blog-container{
-    margin: 20px;
+    margin: 50px 100px;
 }
 .blog-container h2{
     text-align: center;
@@ -10,7 +10,7 @@
     padding: 15px;
     border: 2px solid rgb(64, 64, 243);
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 .blog-ques p{
     line-height: 25px;

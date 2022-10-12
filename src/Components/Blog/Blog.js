@@ -15,7 +15,7 @@ const Blog = () => {
         </div>
         <div className="blog-ques">
             <h3>What is useRef in react?</h3>
-            <p>The useRef is a hook that allows to directly create a reference to the DOM element in the functional component. Syntax: const refContainer = useRef(initialValue); The useRef returns a mutable ref object.</p>
+            <p>The useRef is a hook that allows to directly create a reference to the DOM element in the functional component. Syntax: const refContainer = useRef(initialValue); The useRef returns a mutable ref object.This object has a property called current.</p>
         </div>
     </div>
   )
